@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLECommerce | new Shopping</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #071a3d 0%, #22c8cd 45%, #2cb4bf 100%);
+            color: #2e245a;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        img {
+            border-radius: 14px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+        }
+        
+        input[type="text"] {
+            border: 2px solid #28c1ad;
+            border-radius: 8px;
+            padding: 8px 10px;
+            margin-right: 6px;
+        }
+        
+        input[type="submit"],
+        input[type="button"] {
+            background: linear-gradient(135deg, #046350, #2bbecb);
+            color: rgb(120, 254, 252);
+            border: none;
+            border-radius: 8px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+        }
+    </style>
+</head>
+
+<body background="images/background.png">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tr bgcolor="#1E2F6A">
+            <td colspan="4">
+                <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td width="20%">
+                            <img src="images/logo.png" width="180" height="60" alt="KLECommerce logo">
+                        </td>
+                        <td width="60%" align="center">
+                            <input type="text" size="45" placeholder="Search for products, brands and deals">
+                            <input type="submit" value="Search">
+                        </td>
+                        <td width="20%" align="right">
+                            <font color="white">
+                                <b>Login</b> |
+                                <b>Register</b> |
+                                <b>Cart (<span id="cartCount">0</span>)</b>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr bgcolor="#5A43C8" align="center">
+            <td colspan="4">
+                <table width="100%" border="0" cellpadding="8" cellspacing="0">
+                    <tr align="center">
+                        <td>
+                            <font color="white"><b>Fashion</b></font>
+                        </td>
+                        <td>
+                            <font color="white"><b>Groceries</b></font>
+                        </td>
+                        <td>
+                            <font color="white"><b>Electronics</b></font>
+                        </td>
+                        <td>
+                            <font color="white"><b>Mobiles</b></font>
+                        </td>
+                        <td>
+                            <font color="white"><b>Appliances</b></font>
+                        </td>
+                        <td>
+                            <font color="white"><b>Beauty</b></font>
+                        </td>
+                        <td>
+                            <font color="white"><b>Books</b></font>
+                        </td>
+                        <td>
+                            <font color="white"><b>Sports</b></font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr bgcolor="#EAF7FB">
+            <td colspan="4">
+                <table width="100%" border="0" cellpadding="20" cellspacing="0">
+                    <tr>
+                        <td width="50%" valign="top">
+                            <font size="6" color="#2B2562"><b>Shop with knowledge</b></font><br>
+                            <font size="4" color="#3F3B68"><b>good product i guess</b></font><br><br>
+                            <font color="#4F4B6F">Discover premium products for uhhhhh everyday needs with a smooth and reliable shopping experience incase product on fire we sell extuiingisher for free too made by muneer and inspection check by rasool and jj will put the
+                                fire off incase your product on fire just dont call 911 pls</font>
+                        </td>
+                        <td width="50%" align="center">
+                            <img src="images/banner.png" width="100%" height="280" alt="Promotional banner">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr bgcolor="#6B4CFF">
+            <td colspan="4" align="center">
+                <font color="white" size="5"><b>trust me bro these products trusted by lowkey so they r lowky gud</b></font>
+            </td>
+        </tr>
+        <tr bgcolor="#FDFEFF">
+            <td align="center" valign="top" width="25%">
+                <img src="images/shirt.jpg" width="170" height="170" alt="Men's shirt">
+                <h3>jarberry Shirt</h3>
+                <p><b>₹9</b></p>
+                <input type="button" value="Add to Cart" onclick="addToCart('Men\'s Shirt', 999)">
+            </td>
+            <td align="center" valign="top" width="25%">
+                <img src="images/rice.jpg" width="170" height="170" alt="Rice bag">
+                <h3>Rice Bag</h3>
+                <p><b>₹12</b></p>
+                <input type="button" value="Add to Cart" onclick="addToCart('Rice Bag', 1200)">
+            </td>
+            <td align="center" valign="top" width="25%">
+                <img src="images/mobile.jpg" width="170" height="170" alt="Smart phone">
+                <h3>orange ephone</h3>
+                <p><b>₹15</b></p>
+                <input type="button" value="Add to Cart" onclick="addToCart('Smart Phone', 15000)">
+            </td>
+            <td align="center" valign="top" width="25%">
+                <img src="images/washing.jpg" width="170" height="170" alt="Washing machine">
+                <h3>sonssang Washing Machine</h3>
+                <p><b> 220</b></p>
+                <input type="button" value="Add to Cart" onclick="addToCart('Washing Machine', 22000)">
+            </td>
+        </tr>
+        <tr bgcolor="#F2EBFF">
+            <td colspan="4" align="center">
+                <h3>Your Cart</h3>
+                <p id="cartItems">Your cart is empty.</p>
+                <input type="button" value="Clear Cart" onclick="clearCart()">
+            </td>
+        </tr>
+        <tr bgcolor="#CFEFF8">
+            <td colspan="4" align="center">
+                <h2>Today's Special Offers</h2>
+                <p><b>Flat 20% Discount</b> on fashion essentials<br>Free delivery above <b>₹999</b><br>Buy one get one on selected products<br>Extra cashback on electronics</p>
+            </td>
+        </tr>
+        <tr bgcolor="#EAF7FB">
+            <td align="center">
+                <h3>Easy Returns</h3>
+                <p>Hassle-free exchanges and refunds.</p>
+            </td>
+            <td align="center">
+                <h3>24 × 7 Support</h3>
+                <p>Friendly help whenever you need it.</p>
+            </td>
+            <td align="center">
+                <h3>Secure Payment</h3>
+                <p>Safe and trusted checkout options.</p>
+            </td>
+            <td align="center">
+                <h3>Fast Delivery</h3>
+                <p>Quick shipping across major locations.</p>
+            </td>
+        </tr>
+        <tr bgcolor="#2C1B4D">
+            <td colspan="4" align="center">
+                <font color="white">
+                    <h2>KLECommerce</h2>
+                    <p>Home | Products | About Us | Contact Us | Help</p>
+                    <p>Copyright © 2026 KLECommerce. All rights reserved.</p>
+                </font>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var cart = {};
+
+        function addToCart(name, price) {
+            if (!cart[name]) {
+                cart[name] = {
+                    quantity: 1,
+                    price: price
+                };
+            } else {
+                cart[name].quantity += 1;
+            }
+            updateCart();
+        }
+
+        function clearCart() {
+            cart = {};
+            updateCart();
+        }
+
+        function updateCart() {
+            var totalItems = 0;
+            var itemsText = "";
+            for (var name in cart) {
+                totalItems += cart[name].quantity;
+                itemsText += name + " × " + cart[name].quantity + "<br>";
+            }
+            document.getElementById("cartCount").innerHTML = totalItems;
+            document.getElementById("cartItems").innerHTML = itemsText || "Your cart is empty.";
+        }
+    </script>
+</body>
+
+</html>
